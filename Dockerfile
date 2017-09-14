@@ -1,11 +1,10 @@
-FROM alpine:3.5
+FROM alpine:3.6
 
 MAINTAINER Mbanq <devs@mbanq.com>
 
 RUN apk --update add \
     zip \
-    nodejs=6.9.5-r1 \
-    nodejs-npm \
+    nodejs-npm=6.10.3-r1 \
     python \
     py-pip \
     jq \
