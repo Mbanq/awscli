@@ -3,6 +3,7 @@ FROM alpine:3.5
 MAINTAINER Mbanq <devs@mbanq.com>
 
 RUN apk --update add \
+    zip \
     nodejs \
     nodejs-npm \
     python \
