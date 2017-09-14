@@ -2,7 +2,10 @@ FROM alpine:3.6
 
 MAINTAINER Mbanq <devs@mbanq.com>
 
-RUN apk --update add \
+RUN apk update && apk upgrade && \
+    bash \
+    git \
+    openssh \
     zip \
     nodejs-npm=6.10.3-r1 \
     jq \
