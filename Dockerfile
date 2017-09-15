@@ -4,7 +4,7 @@ MAINTAINER Mbanq <devs@mbanq.com>
 
 RUN apk update && apk upgrade && apk add \
     bash \
-    gcc musl-dev libffi-dev \
+    gcc musl-dev libffi-dev make \
     ruby ruby-dev \
     git \
     openssh \
