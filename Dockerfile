@@ -1,6 +1,6 @@
 FROM alpine:3.6
 
-MAINTAINER Mbanq <devs@mbanq.com>
+MAINTAINER Mbanq <dev@mbanq.com>
 
 RUN apk update && apk upgrade && apk add \
     bash \
