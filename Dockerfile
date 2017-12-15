@@ -7,6 +7,7 @@ RUN apk update && apk upgrade && apk add \
     gcc musl-dev libffi-dev make \
     rsync \
     ruby ruby-dev \
+    perl \
     git \
     openssh \
     zip \
@@ -16,5 +17,4 @@ RUN apk update && apk upgrade && apk add \
     py-pip \
     py2-pip && \
     pip install --upgrade pip awscli s3cmd && \
-    perl \
     mkdir /root/.aws
