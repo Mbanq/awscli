@@ -16,4 +16,5 @@ RUN apk update && apk upgrade && apk add \
     py-pip \
     py2-pip && \
     pip install --upgrade pip awscli s3cmd && \
+    perl \
     mkdir /root/.aws
