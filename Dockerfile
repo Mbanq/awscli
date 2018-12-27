@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.8
 
 MAINTAINER Mbanq <dev@mbanq.com>
 
@@ -11,7 +11,8 @@ RUN apk update && apk upgrade && apk add \
     git \
     openssh \
     zip \
-    nodejs-current \
+    nodejs \
+    npm \
     jq \
     python \
     py-pip \
