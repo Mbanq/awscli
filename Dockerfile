@@ -11,7 +11,7 @@ RUN apk update && apk upgrade && apk add \
     git \
     openssh \
     zip \
-    apk add nodejs-current \
+    nodejs-current \
     jq \
     python \
     py-pip \
