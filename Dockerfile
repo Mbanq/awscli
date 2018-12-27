@@ -11,7 +11,7 @@ RUN apk update && apk upgrade && apk add \
     git \
     openssh \
     zip \
-    nodejs-npm=6.10.3-r1 \
+    apk add nodejs-current \
     jq \
     python \
     py-pip \
