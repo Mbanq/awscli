@@ -14,8 +14,7 @@ RUN apk update && apk upgrade && apk add \
     nodejs \
     npm \
     jq \
-    python \
-    py-pip \
-    py2-pip && \
+    python3 \
+    py3-pip && \
     pip install --upgrade pip awscli s3cmd && \
     mkdir /root/.aws
