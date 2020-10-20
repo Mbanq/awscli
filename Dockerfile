@@ -1,6 +1,6 @@
-FROM alpine:3.10
+FROM alpine:3.12
 
-MAINTAINER Mbanq <dev@mbanq.com>
+LABEL maintainer="Mbanq <dev@mbanq.com>"
 
 RUN apk update && apk upgrade && apk add \
     bash \
