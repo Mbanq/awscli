@@ -2,7 +2,7 @@ FROM alpine:3.12.3
 
 LABEL maintainer="Mbanq <dev@mbanq.com>"
 
-RUN apk update && apk upgrade && apk add \
+RUN apk update -q && apk upgrade -q && apk add -q \
     bash \
     gcc musl-dev libffi-dev make \
     rsync \
@@ -15,6 +15,10 @@ RUN apk update && apk upgrade && apk add \
     npm \
     jq \
     python3 \
-    py3-pip && \
-    pip install --upgrade pip awscli s3cmd && \
-    mkdir /root/.aws
+    py3-pip \
+    cargo && \
+    pip install -q --upgrade pip awscli s3cmd && \
+    mkdir /root/.aws && \
+    cargo install cfn-guard
+
+ENV PATH "/root/.cargo/bin:${PATH}"
