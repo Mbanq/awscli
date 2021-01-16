@@ -15,10 +15,6 @@ RUN apk update -q && apk upgrade -q && apk add -q \
     npm \
     jq \
     python3 \
-    py3-pip \
-    cargo && \
-    pip install -q --upgrade pip awscli s3cmd && \
-    mkdir /root/.aws && \
-    cargo install cfn-guard
-
-ENV PATH "/root/.cargo/bin:${PATH}"
+    py3-pip; \
+    pip install -q --upgrade pip awscli s3cmd; \
+    mkdir /root/.aws
